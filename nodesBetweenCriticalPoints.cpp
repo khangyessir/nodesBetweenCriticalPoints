@@ -29,7 +29,7 @@ public:
             next = next->next;
             ++position;
         }
-        if (criticalPositions.size() <= 2) {
+        if (criticalPositions.size() < 2) {
             return {-1, -1};
         }
         int minDist = INT_MAX;
